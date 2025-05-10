@@ -1,0 +1,21 @@
+{
+  "name": "google-ai-studio-video-generator",
+  "version": "1.0.0",
+  "description": "Automation script for generating videos using Google AI Studio",
+  "main": "generate-video.js",
+  "bin": "generate-video.js",
+  "scripts": {
+    "start": "node generate-video.js",
+    "build": "pkg . --targets node16-win-x64 --output video-generator.exe"
+  },
+  "pkg": {
+    "assets": [],
+    "targets": ["node16-win-x64"]
+  },
+  "dependencies": {
+    "puppeteer-core": "^21.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
